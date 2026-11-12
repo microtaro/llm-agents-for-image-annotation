@@ -1,0 +1,23 @@
+[project]
+name = "agent-app"
+version = "0.7.5.9"
+description = "LLM Agents for Image Annotation: LLM agents annotate your images, and you approve each run"
+license = "Apache-2.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.141.1",
+  "uvicorn==0.53.0",
+  "pillow==12.3.0",
+  "httpx==0.28.1",
+  "mcp==2.2.0",
+]
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[build-system]
+requires = ["uv_build==0.11.22"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""

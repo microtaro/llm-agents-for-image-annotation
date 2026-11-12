@@ -1,0 +1,76 @@
+{
+ "format": "agent-app-dataset",
+ "version": 6,
+ "exported_at": "2026-11-11T11:53:19.359Z",
+ "dataset": {
+  "name": "Warehouse cartons",
+  "purpose": "Box each carton and its shipping label, and read the tracking number on the label."
+ },
+ "labels": [],
+ "images": [
+  {
+   "file": "images/C001.png",
+   "name": "C001.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/C002.png",
+   "name": "C002.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/C003.png",
+   "name": "C003.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/C004.png",
+   "name": "C004.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/C005.png",
+   "name": "C005.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/C006.png",
+   "name": "C006.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/C007.png",
+   "name": "C007.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/C008.png",
+   "name": "C008.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  }
+ ]
+}

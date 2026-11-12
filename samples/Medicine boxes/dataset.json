@@ -1,0 +1,662 @@
+{
+ "format": "agent-app-dataset",
+ "version": 6,
+ "exported_at": "2026-11-11T11:53:19.405Z",
+ "dataset": {
+  "name": "Medicine boxes",
+  "purpose": "Box each medicine box and read its printed values"
+ },
+ "labels": [
+  {
+   "name": "medicine_box",
+   "shape": "bbox",
+   "parent": null,
+   "description": "A medicine box.",
+   "attributes": [
+    {
+     "name": "brand",
+     "type": "text",
+     "choices": null,
+     "description": "The brand printed on the box."
+    },
+    {
+     "name": "product",
+     "type": "text",
+     "choices": null,
+     "description": "The product name printed on the box."
+    },
+    {
+     "name": "strength",
+     "type": "text",
+     "choices": null,
+     "description": "The strength printed on the box."
+    },
+    {
+     "name": "count",
+     "type": "text",
+     "choices": null,
+     "description": "The count printed on the box."
+    },
+    {
+     "name": "lot",
+     "type": "text",
+     "choices": null,
+     "description": "The lot printed on the box."
+    },
+    {
+     "name": "expiry",
+     "type": "text",
+     "choices": null,
+     "description": "The expiry printed on the box."
+    }
+   ]
+  }
+ ],
+ "images": [
+  {
+   "file": "images/A002.png",
+   "name": "A002.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        295.5,
+        224.89,
+        481.5,
+        632.69
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2027-11",
+       "lot": "CV5944",
+       "product": "CALDORA",
+       "strength": "10 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        765.0,
+        229.39,
+        453.0,
+        614.7
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2029-10",
+       "lot": "CQ2604",
+       "product": "CALDORA",
+       "strength": "10 mg"
+      },
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/A004.png",
+   "name": "A004.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        250.5,
+        41.98,
+        336.0,
+        467.77
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2027-05",
+       "lot": "TD3831",
+       "product": "CALDORA",
+       "strength": "5 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        954.0,
+        53.97,
+        339.0,
+        475.27
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2027-10",
+       "lot": "LV2203",
+       "product": "CALDORA",
+       "strength": "5 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        583.5,
+        59.97,
+        378.0,
+        466.27
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2026-12",
+       "lot": "IH9492",
+       "product": "CALDORA",
+       "strength": "5 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 4,
+      "number": 4,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        297.0,
+        514.25,
+        478.5,
+        440.78
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2027-01",
+       "lot": "CN9129",
+       "product": "CALDORA",
+       "strength": "5 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 5,
+      "number": 5,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        775.5,
+        527.74,
+        459.0,
+        437.79
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2029-10",
+       "lot": "LR1937",
+       "product": "CALDORA",
+       "strength": "5 mg"
+      },
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/A008.png",
+   "name": "A008.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        856.5,
+        109.45,
+        523.5,
+        418.3
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "60 tablets",
+       "expiry": "2027-01",
+       "lot": "HY1530",
+       "product": "VESTRIN",
+       "strength": "20 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        186.0,
+        136.43,
+        523.5,
+        380.81
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "60 tablets",
+       "expiry": "2027-01",
+       "lot": "RY3136",
+       "product": "VESTRIN",
+       "strength": "20 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        828.0,
+        553.23,
+        534.0,
+        415.3
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2028-06",
+       "lot": "BA9475",
+       "product": "CALDORA",
+       "strength": "5 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 4,
+      "number": 4,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        226.5,
+        569.72,
+        508.5,
+        341.83
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "60 tablets",
+       "expiry": "2027-11",
+       "lot": "TI3323",
+       "product": "VESTRIN",
+       "strength": "20 mg"
+      },
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/B003.png",
+   "name": "B003.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        364.5,
+        142.43,
+        321.0,
+        335.84
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2029-09",
+       "lot": "NJ5403",
+       "product": "CALDORA",
+       "strength": "10 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        645.0,
+        155.92,
+        313.5,
+        341.83
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2029-05",
+       "lot": "PP2392",
+       "product": "CALDORA",
+       "strength": "10 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        933.0,
+        166.42,
+        310.5,
+        361.32
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2028-08",
+       "lot": "KX5906",
+       "product": "CALDORA",
+       "strength": "10 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 4,
+      "number": 4,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        298.5,
+        443.78,
+        343.5,
+        385.31
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2029-08",
+       "lot": "XH3310",
+       "product": "CALDORA",
+       "strength": "10 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 5,
+      "number": 5,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        591.0,
+        469.27,
+        333.0,
+        382.31
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2028-11",
+       "lot": "IN1396",
+       "product": "CALDORA",
+       "strength": "10 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 6,
+      "number": 6,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        880.5,
+        484.26,
+        345.0,
+        404.8
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2027-02",
+       "lot": "RW6136",
+       "product": "CALDORA",
+       "strength": "10 mg"
+      },
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/B008.png",
+   "name": "B008.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        537.0,
+        353.83,
+        454.5,
+        329.84
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2028-04",
+       "lot": "NE1527",
+       "product": "CALDORA",
+       "strength": "5 mg"
+      },
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/C003.png",
+   "name": "C003.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        529.5,
+        299.85,
+        265.5,
+        361.32
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "60 tablets",
+       "expiry": "2029-12",
+       "lot": "OU0631",
+       "product": "VESTRIN",
+       "strength": "20 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        793.5,
+        346.33,
+        214.5,
+        326.84
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "30 tablets",
+       "expiry": "2027-07",
+       "lot": "UP4201",
+       "product": "CALDORA",
+       "strength": "10 mg"
+      },
+      "parent": null
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        363.0,
+        358.33,
+        208.5,
+        337.34
+       ]
+      },
+      "attributes": {
+       "brand": "NOVERA",
+       "count": "60 tablets",
+       "expiry": "2028-12",
+       "lot": "GX8453",
+       "product": "VESTRIN",
+       "strength": "20 mg"
+      },
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/C001.png",
+   "name": "C001.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/D006.png",
+   "name": "D006.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/E004.png",
+   "name": "E004.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/E005.png",
+   "name": "E005.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  }
+ ]
+}

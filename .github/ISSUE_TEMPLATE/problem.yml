@@ -1,0 +1,44 @@
+name: Something went wrong
+description: The app did not start, stopped, or did something unexpected
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw. Screenshots help.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: In the settings at the top right of the screen.
+    validations:
+      required: true
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: cli
+    attributes:
+      label: The AI CLI you use
+      options:
+        - Claude Code
+        - Codex
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: The app's log
+      description: The end of `agent_app/server.log` in the app's folder. Read it first, and remove anything you would not want public.
+      render: text

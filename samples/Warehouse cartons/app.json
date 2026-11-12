@@ -1,0 +1,170 @@
+{
+ "format": "agent-app-dataset",
+ "version": 6,
+ "exported_at": "2026-11-11T11:53:19.359Z",
+ "app": {
+  "dataset": {
+   "id": "0667dce2-ae33-48ca-8985-a342e2703147",
+   "number": 5,
+   "name": "Warehouse cartons",
+   "purpose": "Box each carton and its shipping label, and read the tracking number on the label.",
+   "created_at": "2026-11-11T11:53:09.228Z",
+   "decision_id": "dec-11c76565-f41f-4c29-bf20-2205afeea95a"
+  },
+  "library_labels": [],
+  "images": [
+   {
+    "id": "img-5c40f1fc12ba12c5264cbf0359c38d2b23078a5d16df6538865a827df4fac264",
+    "name": "C001.png",
+    "width": 1536,
+    "height": 1024,
+    "byte_size": 2539128,
+    "format": "PNG",
+    "origin": "generated",
+    "origin_json": {
+     "tool": "codex imagegen"
+    },
+    "created_at": "2026-11-11T11:53:08.794Z",
+    "position": 0,
+    "added_at": "2026-11-11T11:53:09.229Z",
+    "source_path": "/var/tmp/samples/warehouse-cartons/C001.png",
+    "file": "images/C001.png"
+   },
+   {
+    "id": "img-67c2ddb0b5349f253baa48eaed1e612f1c6e45b41656b6cf87ab07d04caf3438",
+    "name": "C002.png",
+    "width": 1536,
+    "height": 1024,
+    "byte_size": 2635552,
+    "format": "PNG",
+    "origin": "generated",
+    "origin_json": {
+     "tool": "codex imagegen"
+    },
+    "created_at": "2026-11-11T11:53:08.855Z",
+    "position": 1,
+    "added_at": "2026-11-11T11:53:09.229Z",
+    "source_path": "/var/tmp/samples/warehouse-cartons/C002.png",
+    "file": "images/C002.png"
+   },
+   {
+    "id": "img-d5f06f8969ae598a0b44e951b60c355aaee35c76ab8b6aecea0a37114e6a601b",
+    "name": "C003.png",
+    "width": 1536,
+    "height": 1024,
+    "byte_size": 2673256,
+    "format": "PNG",
+    "origin": "generated",
+    "origin_json": {
+     "tool": "codex imagegen"
+    },
+    "created_at": "2026-11-11T11:53:08.918Z",
+    "position": 2,
+    "added_at": "2026-11-11T11:53:09.229Z",
+    "source_path": "/var/tmp/samples/warehouse-cartons/C003.png",
+    "file": "images/C003.png"
+   },
+   {
+    "id": "img-aabecc23bd6cea74133c04e7dc18d78d688e50fb1f8b0ad158e40d1ba89f0612",
+    "name": "C004.png",
+    "width": 1536,
+    "height": 1024,
+    "byte_size": 2666053,
+    "format": "PNG",
+    "origin": "generated",
+    "origin_json": {
+     "tool": "codex imagegen"
+    },
+    "created_at": "2026-11-11T11:53:08.980Z",
+    "position": 3,
+    "added_at": "2026-11-11T11:53:09.229Z",
+    "source_path": "/var/tmp/samples/warehouse-cartons/C004.png",
+    "file": "images/C004.png"
+   },
+   {
+    "id": "img-7356b1a1047fb119ab0d537a0a3ec92b2274943b6f345a7bbe2b1ac7bca14e80",
+    "name": "C005.png",
+    "width": 1536,
+    "height": 1024,
+    "byte_size": 2499718,
+    "format": "PNG",
+    "origin": "generated",
+    "origin_json": {
+     "tool": "codex imagegen"
+    },
+    "created_at": "2026-11-11T11:53:09.045Z",
+    "position": 4,
+    "added_at": "2026-11-11T11:53:09.229Z",
+    "source_path": "/var/tmp/samples/warehouse-cartons/C005.png",
+    "file": "images/C005.png"
+   },
+   {
+    "id": "img-1be72fcf129808f40c11f7121cbe438375b6143f35b293111a010e7166cb1cbd",
+    "name": "C006.png",
+    "width": 1536,
+    "height": 1024,
+    "byte_size": 2710786,
+    "format": "PNG",
+    "origin": "generated",
+    "origin_json": {
+     "tool": "codex imagegen"
+    },
+    "created_at": "2026-11-11T11:53:09.104Z",
+    "position": 5,
+    "added_at": "2026-11-11T11:53:09.229Z",
+    "source_path": "/var/tmp/samples/warehouse-cartons/C006.png",
+    "file": "images/C006.png"
+   },
+   {
+    "id": "img-a2f33f750506e0c9177e38689b820e668b1f3401b4a64f7008708d6353cf3af3",
+    "name": "C007.png",
+    "width": 1536,
+    "height": 1024,
+    "byte_size": 2835775,
+    "format": "PNG",
+    "origin": "generated",
+    "origin_json": {
+     "tool": "codex imagegen"
+    },
+    "created_at": "2026-11-11T11:53:09.167Z",
+    "position": 6,
+    "added_at": "2026-11-11T11:53:09.229Z",
+    "source_path": "/var/tmp/samples/warehouse-cartons/C007.png",
+    "file": "images/C007.png"
+   },
+   {
+    "id": "img-a2bd489f4b6bad2e15bd4d63151d291287e68c76c4657c3bce075016cc5188aa",
+    "name": "C008.png",
+    "width": 1536,
+    "height": 1024,
+    "byte_size": 2469689,
+    "format": "PNG",
+    "origin": "generated",
+    "origin_json": {
+     "tool": "codex imagegen"
+    },
+    "created_at": "2026-11-11T11:53:09.223Z",
+    "position": 7,
+    "added_at": "2026-11-11T11:53:09.229Z",
+    "source_path": "/var/tmp/samples/warehouse-cartons/C008.png",
+    "file": "images/C008.png"
+   }
+  ],
+  "record_images": [],
+  "instructions": [],
+  "drafts": [],
+  "recipes": [],
+  "runs": [],
+  "fixes": [],
+  "imports": [],
+  "copies": [],
+  "copy_results": [],
+  "results": [],
+  "annotation_sets": [],
+  "annotations": [],
+  "uses": [],
+  "confirmations": [],
+  "training_snapshots": [],
+  "label_colors": []
+ }
+}

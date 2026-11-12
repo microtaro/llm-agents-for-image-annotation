@@ -1,0 +1,1654 @@
+{
+ "format": "agent-app-dataset",
+ "version": 6,
+ "exported_at": "2026-11-11T11:53:19.429Z",
+ "dataset": {
+  "name": "Medicine box labels",
+  "purpose": "Box each medicine box, and inside it box the barcode and two printed lines (the product name and the lot), and read them."
+ },
+ "labels": [
+  {
+   "name": "medicine_box",
+   "shape": "bbox",
+   "parent": null,
+   "description": "A medicine box: the whole visible box.",
+   "attributes": []
+  },
+  {
+   "name": "barcode",
+   "shape": "bbox",
+   "parent": "medicine_box",
+   "description": "The barcode printed on a medicine box, the bars and the digits printed under them in one box.",
+   "attributes": [
+    {
+     "name": "digits",
+     "type": "text",
+     "choices": null,
+     "description": "The digits printed under the bars, exactly as printed (digits only, leading zeros kept); empty when not readable."
+    }
+   ]
+  },
+  {
+   "name": "product_name",
+   "shape": "bbox",
+   "parent": "medicine_box",
+   "description": "The printed product name line on a medicine box (e.g. CALDORA), that line only.",
+   "attributes": [
+    {
+     "name": "text",
+     "type": "text",
+     "choices": null,
+     "description": "The line exactly as printed; empty when not readable."
+    }
+   ]
+  },
+  {
+   "name": "lot",
+   "shape": "bbox",
+   "parent": "medicine_box",
+   "description": "The printed lot line on a medicine box (e.g. LOT CV5944), that line only.",
+   "attributes": [
+    {
+     "name": "text",
+     "type": "text",
+     "choices": null,
+     "description": "The line exactly as printed, prefix included; empty when not readable."
+    }
+   ]
+  }
+ ],
+ "images": [
+  {
+   "file": "images/A002.png",
+   "name": "A002.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        399.0,
+        691.16,
+        288.0,
+        122.94
+       ]
+      },
+      "attributes": {
+       "digits": "7328562483432"
+      },
+      "parent": 5
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        861.0,
+        692.66,
+        276.0,
+        116.94
+       ]
+      },
+      "attributes": {
+       "digits": "0338170678838"
+      },
+      "parent": 6
+     },
+     {
+      "id": 3,
+      "number": 1,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        858.0,
+        611.7,
+        174.0,
+        29.99
+       ]
+      },
+      "attributes": {
+       "text": "LOT CQ2604"
+      },
+      "parent": 6
+     },
+     {
+      "id": 4,
+      "number": 2,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        396.0,
+        616.2,
+        174.0,
+        29.99
+       ]
+      },
+      "attributes": {
+       "text": "LOT CV5944"
+      },
+      "parent": 5
+     },
+     {
+      "id": 5,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        295.5,
+        224.89,
+        481.5,
+        632.69
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 6,
+      "number": 2,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        765.0,
+        229.39,
+        453.0,
+        610.2
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 7,
+      "number": 1,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        384.0,
+        413.8,
+        264.0,
+        50.98
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 5
+     },
+     {
+      "id": 8,
+      "number": 2,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        849.0,
+        413.8,
+        261.0,
+        50.98
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 6
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/A004.png",
+   "name": "A004.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        264.0,
+        244.38,
+        93.0,
+        206.9
+       ]
+      },
+      "attributes": {
+       "digits": "1287188543124"
+      },
+      "parent": 11
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        973.5,
+        266.87,
+        93.0,
+        212.9
+       ]
+      },
+      "attributes": {
+       "digits": "0305594454180"
+      },
+      "parent": 12
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        666.0,
+        383.81,
+        232.5,
+        97.45
+       ]
+      },
+      "attributes": {
+       "digits": "2724709274394"
+      },
+      "parent": 13
+     },
+     {
+      "id": 4,
+      "number": 4,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        394.5,
+        830.59,
+        225.0,
+        95.95
+       ]
+      },
+      "attributes": {
+       "digits": "7383612100031"
+      },
+      "parent": 14
+     },
+     {
+      "id": 5,
+      "number": 5,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        900.0,
+        833.59,
+        252.0,
+        95.95
+       ]
+      },
+      "attributes": {
+       "digits": "8377575935293"
+      },
+      "parent": 15
+     },
+     {
+      "id": 6,
+      "number": 1,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        322.5,
+        71.96,
+        30.0,
+        125.94
+       ]
+      },
+      "attributes": {
+       "text": "LOT TD3831"
+      },
+      "parent": 11
+     },
+     {
+      "id": 7,
+      "number": 2,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1021.5,
+        88.46,
+        33.0,
+        125.94
+       ]
+      },
+      "attributes": {
+       "text": "LOT LV2203"
+      },
+      "parent": 12
+     },
+     {
+      "id": 8,
+      "number": 3,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        640.5,
+        322.34,
+        126.0,
+        29.99
+       ]
+      },
+      "attributes": {
+       "text": "LOT IH9492"
+      },
+      "parent": 13
+     },
+     {
+      "id": 9,
+      "number": 4,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        340.5,
+        766.13,
+        123.0,
+        26.99
+       ]
+      },
+      "attributes": {
+       "text": "LOT CN9129"
+      },
+      "parent": 14
+     },
+     {
+      "id": 10,
+      "number": 5,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        834.0,
+        788.61,
+        123.0,
+        26.99
+       ]
+      },
+      "attributes": {
+       "text": "LOT LR1937"
+      },
+      "parent": 15
+     },
+     {
+      "id": 11,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        252.0,
+        41.98,
+        333.0,
+        467.77
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 12,
+      "number": 2,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        955.5,
+        53.97,
+        336.0,
+        473.77
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 13,
+      "number": 3,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        582.0,
+        59.97,
+        378.0,
+        464.77
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 14,
+      "number": 4,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        300.0,
+        512.75,
+        474.0,
+        443.78
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 15,
+      "number": 5,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        775.5,
+        527.74,
+        459.0,
+        437.79
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 16,
+      "number": 1,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        447.0,
+        128.94,
+        39.0,
+        182.91
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 11
+     },
+     {
+      "id": 17,
+      "number": 2,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1150.5,
+        143.93,
+        48.0,
+        194.9
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 12
+     },
+     {
+      "id": 18,
+      "number": 3,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        640.5,
+        173.92,
+        186.0,
+        41.98
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 13
+     },
+     {
+      "id": 19,
+      "number": 4,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        363.0,
+        640.19,
+        171.0,
+        38.98
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 14
+     },
+     {
+      "id": 20,
+      "number": 5,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        834.0,
+        653.68,
+        174.0,
+        38.98
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 15
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/A008.png",
+   "name": "A008.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 2,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 2,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        498.0,
+        359.82,
+        168.0,
+        77.96
+       ]
+      },
+      "attributes": {
+       "digits": "2921421782864"
+      },
+      "parent": 10
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1144.5,
+        385.31,
+        160.5,
+        98.95
+       ]
+      },
+      "attributes": {
+       "digits": "7066050293519"
+      },
+      "parent": 9
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        508.5,
+        809.6,
+        171.0,
+        83.96
+       ]
+      },
+      "attributes": {
+       "digits": "9280427637968"
+      },
+      "parent": 12
+     },
+     {
+      "id": 4,
+      "number": 4,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1110.0,
+        833.59,
+        171.0,
+        106.45
+       ]
+      },
+      "attributes": {
+       "digits": "7479877845363"
+      },
+      "parent": 11
+     },
+     {
+      "id": 5,
+      "number": 1,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        895.5,
+        349.33,
+        111.0,
+        35.98
+       ]
+      },
+      "attributes": {
+       "text": "LOT HY1530"
+      },
+      "parent": 9
+     },
+     {
+      "id": 6,
+      "number": 2,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        246.0,
+        415.3,
+        115.5,
+        29.99
+       ]
+      },
+      "attributes": {
+       "text": "LOT RY3136"
+      },
+      "parent": 10
+     },
+     {
+      "id": 7,
+      "number": 3,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        873.0,
+        796.11,
+        114.0,
+        37.48
+       ]
+      },
+      "attributes": {
+       "text": "LOT BA9475"
+      },
+      "parent": 11
+     },
+     {
+      "id": 8,
+      "number": 4,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        253.5,
+        808.11,
+        108.0,
+        28.49
+       ]
+      },
+      "attributes": {
+       "text": "LOT TI3323"
+      },
+      "parent": 12
+     },
+     {
+      "id": 9,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        855.0,
+        107.95,
+        526.5,
+        422.79
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 10,
+      "number": 2,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        186.0,
+        134.93,
+        525.0,
+        383.81
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 11,
+      "number": 3,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        829.5,
+        551.73,
+        534.0,
+        416.8
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 12,
+      "number": 4,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        228.0,
+        566.72,
+        508.5,
+        346.33
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 13,
+      "number": 1,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1026.0,
+        236.88,
+        205.5,
+        70.47
+       ]
+      },
+      "attributes": {
+       "text": "VESTRIN"
+      },
+      "parent": 9
+     },
+     {
+      "id": 14,
+      "number": 2,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        331.5,
+        248.88,
+        210.0,
+        50.98
+       ]
+      },
+      "attributes": {
+       "text": "VESTRIN"
+      },
+      "parent": 10
+     },
+     {
+      "id": 15,
+      "number": 3,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        999.0,
+        668.67,
+        217.5,
+        62.97
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 11
+     },
+     {
+      "id": 16,
+      "number": 4,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        373.5,
+        670.17,
+        207.0,
+        52.47
+       ]
+      },
+      "attributes": {
+       "text": "VESTRIN"
+      },
+      "parent": 12
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/B003.png",
+   "name": "B003.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        415.5,
+        349.33,
+        196.5,
+        85.46
+       ]
+      },
+      "attributes": {
+       "digits": "3561785820973"
+      },
+      "parent": 13
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        696.0,
+        371.82,
+        192.0,
+        86.96
+       ]
+      },
+      "attributes": {
+       "digits": "9098775082654"
+      },
+      "parent": 14
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        993.0,
+        386.81,
+        195.0,
+        86.96
+       ]
+      },
+      "attributes": {
+       "digits": "2096351079698"
+      },
+      "parent": 15
+     },
+     {
+      "id": 4,
+      "number": 4,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        355.5,
+        677.67,
+        198.0,
+        101.95
+       ]
+      },
+      "attributes": {
+       "digits": "0318869108633"
+      },
+      "parent": 16
+     },
+     {
+      "id": 5,
+      "number": 5,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        645.0,
+        703.16,
+        204.0,
+        95.95
+       ]
+      },
+      "attributes": {
+       "digits": "2627677232382"
+      },
+      "parent": 17
+     },
+     {
+      "id": 6,
+      "number": 6,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        942.0,
+        725.65,
+        201.0,
+        107.95
+       ]
+      },
+      "attributes": {
+       "digits": "8021360079907"
+      },
+      "parent": 18
+     },
+     {
+      "id": 7,
+      "number": 1,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        420.0,
+        302.85,
+        111.0,
+        25.49
+       ]
+      },
+      "attributes": {
+       "text": "LOT NJ5403"
+      },
+      "parent": 13
+     },
+     {
+      "id": 8,
+      "number": 2,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        693.0,
+        311.85,
+        114.0,
+        25.49
+       ]
+      },
+      "attributes": {
+       "text": "LOT PP2392"
+      },
+      "parent": 14
+     },
+     {
+      "id": 9,
+      "number": 3,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        994.5,
+        332.84,
+        111.0,
+        25.49
+       ]
+      },
+      "attributes": {
+       "text": "LOT KX5906"
+      },
+      "parent": 15
+     },
+     {
+      "id": 10,
+      "number": 4,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        366.0,
+        622.2,
+        114.0,
+        25.49
+       ]
+      },
+      "attributes": {
+       "text": "LOT XH3310"
+      },
+      "parent": 16
+     },
+     {
+      "id": 11,
+      "number": 5,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        649.5,
+        646.18,
+        111.0,
+        25.49
+       ]
+      },
+      "attributes": {
+       "text": "LOT IN1396"
+      },
+      "parent": 17
+     },
+     {
+      "id": 12,
+      "number": 6,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        940.5,
+        667.17,
+        123.0,
+        28.49
+       ]
+      },
+      "attributes": {
+       "text": "LOT RW6136"
+      },
+      "parent": 18
+     },
+     {
+      "id": 13,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        364.5,
+        142.43,
+        322.5,
+        334.34
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 14,
+      "number": 2,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        645.0,
+        155.92,
+        312.0,
+        338.83
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 15,
+      "number": 3,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        933.0,
+        169.42,
+        312.0,
+        355.33
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 16,
+      "number": 4,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        297.0,
+        443.78,
+        343.5,
+        383.81
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 17,
+      "number": 5,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        591.0,
+        469.27,
+        334.5,
+        379.31
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 18,
+      "number": 6,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        880.5,
+        484.26,
+        346.5,
+        403.3
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 19,
+      "number": 1,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        424.5,
+        208.4,
+        105.0,
+        29.99
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 13
+     },
+     {
+      "id": 20,
+      "number": 2,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        705.0,
+        215.89,
+        133.5,
+        31.48
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 14
+     },
+     {
+      "id": 21,
+      "number": 3,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        999.0,
+        229.39,
+        129.0,
+        31.48
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 15
+     },
+     {
+      "id": 22,
+      "number": 4,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        390.0,
+        521.75,
+        135.0,
+        32.98
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 16
+     },
+     {
+      "id": 23,
+      "number": 5,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        678.0,
+        545.73,
+        123.0,
+        32.98
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 17
+     },
+     {
+      "id": 24,
+      "number": 6,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        957.0,
+        554.73,
+        135.0,
+        35.98
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 18
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/B008.png",
+   "name": "B008.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 2,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 2,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        804.72,
+        549.23,
+        155.97,
+        73.66
+       ]
+      },
+      "attributes": {
+       "digits": "5662988679206"
+      },
+      "parent": 3
+     },
+     {
+      "id": 2,
+      "number": 1,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        592.56,
+        583.15,
+        103.66,
+        18.41
+       ]
+      },
+      "attributes": {
+       "text": "LOT NE1527"
+      },
+      "parent": 3
+     },
+     {
+      "id": 3,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        536.38,
+        354.41,
+        455.31,
+        329.53
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 4,
+      "number": 1,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        600.31,
+        443.58,
+        181.16,
+        29.08
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 3
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/C003.png",
+   "name": "C003.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 2,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 2,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        579.09,
+        548.97,
+        141.27,
+        79.17
+       ]
+      },
+      "attributes": {
+       "digits": "4249758066427"
+      },
+      "parent": 7
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        835.23,
+        590.54,
+        138.63,
+        62.68
+       ]
+      },
+      "attributes": {
+       "digits": "5699505941117"
+      },
+      "parent": 8
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "barcode",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        395.57,
+        593.18,
+        130.71,
+        76.53
+       ]
+      },
+      "attributes": {
+       "digits": "3065528843355"
+      },
+      "parent": 9
+     },
+     {
+      "id": 4,
+      "number": 1,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        576.45,
+        494.21,
+        93.74,
+        31.67
+       ]
+      },
+      "attributes": {
+       "text": "LOT OU0631"
+      },
+      "parent": 7
+     },
+     {
+      "id": 5,
+      "number": 2,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        820.71,
+        535.78,
+        106.95,
+        18.47
+       ]
+      },
+      "attributes": {
+       "text": "LOT UP4201"
+      },
+      "parent": 8
+     },
+     {
+      "id": 6,
+      "number": 3,
+      "label": "lot",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        400.85,
+        542.38,
+        80.54,
+        26.39
+       ]
+      },
+      "attributes": {
+       "text": "LOT GX8453"
+      },
+      "parent": 9
+     },
+     {
+      "id": 7,
+      "number": 1,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        528.26,
+        300.24,
+        266.7,
+        361.56
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 8,
+      "number": 2,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        792.32,
+        345.1,
+        217.19,
+        329.23
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 9,
+      "number": 3,
+      "label": "medicine_box",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        361.24,
+        356.98,
+        212.57,
+        338.47
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 10,
+      "number": 1,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        589.66,
+        378.09,
+        135.99,
+        52.78
+       ]
+      },
+      "attributes": {
+       "text": "VESTRIN"
+      },
+      "parent": 7
+     },
+     {
+      "id": 11,
+      "number": 2,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        816.75,
+        416.36,
+        158.44,
+        34.31
+       ]
+      },
+      "attributes": {
+       "text": "CALDORA"
+      },
+      "parent": 8
+     },
+     {
+      "id": 12,
+      "number": 3,
+      "label": "product_name",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        418.02,
+        430.87,
+        120.15,
+        48.82
+       ]
+      },
+      "attributes": {
+       "text": "VESTRIN"
+      },
+      "parent": 9
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/C001.png",
+   "name": "C001.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/D006.png",
+   "name": "D006.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/E004.png",
+   "name": "E004.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/E005.png",
+   "name": "E005.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  }
+ ]
+}

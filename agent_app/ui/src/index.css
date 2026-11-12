@@ -1,0 +1,191 @@
+/* Tailwind looks for class names only in src (2026-11-11: the public repository keeps the built
+   screen, and from a clone it took names out of the old built files too). */
+@import "tailwindcss" source(".");
+@import "tw-animate-css";
+
+/* The values of DESIGN.md 6-7, light and dark (2026-10-07). shadcn's names map onto them. */
+@theme inline {
+  /* The steps of the text (user 2026-10-14: the right's body is 13px, the talk the same; the
+     text size setting moves them all together by the root's size, 14px at the standard). */
+  --text-tiny: calc(10rem / 14);
+  --text-note: calc(11rem / 14);
+  --text-small: calc(12rem / 14);
+  --text-body: calc(13rem / 14);
+  --text-lead: 1rem;
+  --text-heading: calc(15rem / 14);
+  --text-large: calc(16rem / 14);
+  --text-title: calc(17rem / 14);
+  --color-background: var(--table);
+  --color-foreground: var(--ink);
+  --color-card: var(--sheet);
+  --color-card-foreground: var(--ink);
+  --color-popover: var(--sheet);
+  --color-popover-foreground: var(--ink);
+  --color-primary: var(--action);
+  --color-primary-foreground: var(--action-ink);
+  --color-secondary: var(--surface);
+  --color-secondary-foreground: var(--ink);
+  --color-muted: var(--table);
+  --color-muted-foreground: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--ink);
+  --color-destructive: var(--failed);
+  --color-destructive-foreground: var(--action-ink);
+  --color-border: var(--line);
+  --color-input: var(--line);
+  --color-ring: var(--action);
+  --color-table: var(--table);
+  --color-sheet: var(--sheet);
+  --color-ink: var(--ink);
+  --color-line: var(--line);
+  --color-action: var(--action);
+  --color-unprocessed: var(--unprocessed);
+  --color-processing: var(--processing);
+  --color-annotated: var(--annotated);
+  --color-here: var(--here);
+  --color-here-ink: var(--here-ink);
+  --color-failed: var(--failed);
+  --color-surface: var(--surface);
+  --color-selected: var(--selected);
+  --color-draft: var(--draft);
+  --color-hover: var(--hover);
+  --color-answer: var(--answer);
+  --color-added: var(--added);
+  --color-run-line: var(--run-line);
+  --color-track: var(--track);
+  --color-backdrop: var(--backdrop);
+  --color-processing-ink: var(--processing-ink);
+  --color-annotated-ink: var(--annotated-ink);
+  --color-action-hover: var(--action-hover);
+  --color-failed-hover: var(--failed-hover);
+  --color-selected-ink: var(--selected-ink);
+  --color-overlay: var(--overlay);
+  --color-fill-ink: var(--fill-ink);
+  --color-bright-fill-ink: var(--bright-fill-ink);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 6px;
+  --font-sans: "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", "Meiryo", system-ui, sans-serif;
+  --font-mono: ui-monospace, Menlo, Consolas, monospace;
+}
+
+:root {
+  /* The map row's height, set by StageBar; the side panel sits below it. */
+  --stage-bar: 0px;
+  /* The gallery's title row; the side panel is this much shorter so its bottom stays in view. */
+  --gallery-head: 0px;
+  --table: #e4e7eb;
+  --sheet: #fafbfc;
+  --ink: #1e2632;
+  /* 4.63:1 on --table (Sol 2026-10-12: #5e6978 was 4.49, under 4.5). */
+  --muted: #5c6776;
+  --line: #c9cfd6;
+  /* Operations: one indigo-violet, apart from the label colors on the images (user 2026-10-07:
+     the run's blue and the first label's blue were the same; 2026-10-12: the slate read as the
+     black of the text. 251°, between the palette's blue 227° and purple 286°; DESIGN.md 6). */
+  --action: #5b3fd6;
+  --action-ink: #ffffff;
+  --unprocessed: #9aa3ae;
+  --processing: #c98a0c;
+  --annotated: #23845a;
+  /* Where the left's workers are now, a state (user 2026-10-15: blue-green, apart from the
+     action's indigo, training's green, the amber of work going on, and the text's ink). */
+  --here: #0097a7;
+  --here-ink: #ffffff;
+  --failed: #c0392b;
+  /* Fields, cards and boxes on a sheet (was white). */
+  --surface: #ffffff;
+  /* The chosen object or line, the person's words in the chat. */
+  --selected: #ece8fb;
+  /* A draft being made, the band while editing. */
+  --draft: #fff8e8;
+  --hover: #f2f4f7;
+  /* The AI's answers. */
+  --answer: #eef1f5;
+  /* The run looked at, the last chosen row. */
+  --accent: #eceff3;
+  /* A sentence or label added in a draft. */
+  --added: #d9f2e3;
+  --run-line: #a9b3c0;
+  --track: #e3e7ee;
+  /* Behind an image: dark in both, so the image looks the same. */
+  --backdrop: #1e2632;
+  --processing-ink: #8a5c00;
+  /* The green as text on the grey grounds (Sol 2026-10-13: 3.7:1 on the flow's cards). */
+  --annotated-ink: #1a6b47;
+  --action-hover: #4a31b8;
+  --failed-hover: #a5301f;
+  /* The chosen object's text on --selected. */
+  --selected-ink: #3b2a96;
+  /* Labels laid over an image (pick for the next run): readable on any image. */
+  --overlay: rgba(250, 251, 252, 0.92);
+  /* Text on the fills of meaning (green, red, slate) and on the yellow one: readable on both
+     themes (Astra 2026-10-07: white on the dark theme's green read 2.7:1, on yellow 3.0:1). */
+  --fill-ink: #ffffff;
+  --bright-fill-ink: #1e2632;
+  color-scheme: light;
+}
+
+/* Dark (2026-10-07, the switch at the top right): the same blue-grey turned to night, not
+   black; the colors of meaning are only made light enough to read on it. Label colors on the
+   images do not change. */
+:root[data-theme="dark"] {
+  --table: #1a2029;
+  --sheet: #212833;
+  --ink: #e3e8ef;
+  --muted: #9aa6b5;
+  --line: #3b4554;
+  --action: #7b6cf0;
+  --action-ink: #ffffff;
+  --unprocessed: #6d7785;
+  --processing: #e0a43c;
+  --annotated: #43b07f;
+  --here: #4dd0e1;
+  --here-ink: #141a22;
+  --failed: #e5675a;
+  --surface: #29313d;
+  --selected: #37325a;
+  --draft: #3a3120;
+  --hover: #2c3542;
+  --answer: #262e3a;
+  --accent: #2b3441;
+  --added: #1f4030;
+  --run-line: #56637a;
+  --track: #333c49;
+  --backdrop: #0f1319;
+  --processing-ink: #f0c070;
+  --annotated-ink: #6fd3a3;
+  --action-hover: #6a5bd8;
+  --failed-hover: #c95144;
+  --selected-ink: #dbe3ee;
+  --overlay: rgba(33, 40, 51, 0.92);
+  --fill-ink: #141a22;
+  --bright-fill-ink: #141a22;
+  color-scheme: dark;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    font-size: 14px;
+  }
+  /* The ticks and sliders in the operations' color, not the browser's blue. */
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="range"] {
+    accent-color: var(--action);
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    margin: 0;
+    line-height: 1.6;
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: 600;
+  }
+}

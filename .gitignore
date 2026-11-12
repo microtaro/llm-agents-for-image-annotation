@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.vitest/
+
+# What the app makes when it runs: your data stays here
+*.db
+*.db-shm
+*.db-wal
+*.log
+agent_app/agent-files/
+agent_app/browser/
+agent_app/server.port
+agent_app/launcher.lock
+# What start.cmd and start.sh put in the folder: uv, Python and uv's cache
+/uv/
+/python/
+/uv-cache/
+# The shortcut the app makes on Windows (start.cmd)
+Annotation.lnk
+
+# OS
+.DS_Store
+Thumbs.db

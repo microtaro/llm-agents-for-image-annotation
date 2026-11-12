@@ -1,0 +1,29 @@
+{
+  "note": "What npm run zip puts in the zip (user 2026-10-29: made from the work's own app by one fixed way). datasets: numbers of the work's own library taken in whole with their records; empty: a dataset of that one's images with nothing done; out: where the zip is written (the last one moves to out/old).",
+  "datasets": [11, 13, 16, 22, 28, 29, 30],
+  "empty": [
+    {
+      "from": 11,
+      "name": "薬の箱",
+      "purpose": "薬の箱ごとに、箱を囲み、印字の値を読む"
+    }
+  ],
+  "min": {
+    "note": "The light one (npm run zip -- --min, user 2026-10-30: one dataset is enough): the same app with only these, named agent-app-<version>-min.",
+    "datasets": [],
+    "empty": [
+      {
+        "from": 11,
+        "name": "薬の箱",
+        "purpose": "薬の箱ごとに、箱を囲み、印字の値を読む"
+      }
+    ]
+  },
+  "public": {
+    "note": "The one to publish (npm run zip -- --public, user 2026-11-05: English only, as Japanese in the names and labels loses people): the same app with the datasets written out in samples, named <name>-<version>. Nothing comes from the work's own server.",
+    "name": "llm-agents-for-image-annotation",
+    "samples": "~/ai_project/annotation_handout/public-samples-20261105",
+    "repo": "~/ai_project/llm-agents-for-image-annotation"
+  },
+  "out": "~/ai_project/annotation_handout"
+}

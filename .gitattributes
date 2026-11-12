@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Windows reads a .cmd's labels right only with CRLF line ends (start.cmd).
+*.cmd text eol=crlf

@@ -1,0 +1,1921 @@
+{
+ "format": "agent-app-dataset",
+ "version": 6,
+ "exported_at": "2026-11-11T11:53:19.381Z",
+ "dataset": {
+  "name": "Tray parts",
+  "purpose": "Box and count each small part by type"
+ },
+ "labels": [
+  {
+   "name": "small_screw",
+   "shape": "bbox",
+   "parent": null,
+   "description": "A small metal screw.",
+   "attributes": []
+  },
+  {
+   "name": "m6_nut",
+   "shape": "bbox",
+   "parent": null,
+   "description": "A hexagonal metal M6 nut.",
+   "attributes": []
+  },
+  {
+   "name": "flat_washer",
+   "shape": "bbox",
+   "parent": null,
+   "description": "A flat metal ring washer.",
+   "attributes": []
+  },
+  {
+   "name": "white_round_tablet",
+   "shape": "bbox",
+   "parent": null,
+   "description": "A round white tablet.",
+   "attributes": []
+  },
+  {
+   "name": "yellow_oval_tablet",
+   "shape": "bbox",
+   "parent": null,
+   "description": "An oval yellow tablet.",
+   "attributes": []
+  },
+  {
+   "name": "red_white_capsule",
+   "shape": "bbox",
+   "parent": null,
+   "description": "A two-colored capsule, part red and part white.",
+   "attributes": []
+  }
+ ],
+ "images": [
+  {
+   "file": "images/A001.png",
+   "name": "A001.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        730.5,
+        151.43,
+        69.0,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        622.5,
+        176.91,
+        93.0,
+        59.97
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        843.0,
+        181.41,
+        57.0,
+        85.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 4,
+      "number": 4,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        778.5,
+        229.39,
+        69.0,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 5,
+      "number": 5,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        649.5,
+        232.39,
+        69.0,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 6,
+      "number": 6,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        882.0,
+        266.87,
+        55.5,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 7,
+      "number": 7,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        700.5,
+        284.86,
+        69.0,
+        86.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 8,
+      "number": 8,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        591.0,
+        292.36,
+        61.5,
+        91.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 9,
+      "number": 9,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        795.0,
+        344.83,
+        90.0,
+        68.97
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 10,
+      "number": 10,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        664.5,
+        371.82,
+        72.0,
+        85.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 11,
+      "number": 11,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1047.0,
+        512.75,
+        72.0,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 12,
+      "number": 12,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        361.5,
+        515.75,
+        84.0,
+        80.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 13,
+      "number": 13,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        268.5,
+        544.23,
+        85.5,
+        70.47
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 14,
+      "number": 14,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        507.0,
+        550.23,
+        90.0,
+        55.47
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 15,
+      "number": 15,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1153.5,
+        550.23,
+        84.0,
+        55.47
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 16,
+      "number": 16,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        990.0,
+        563.72,
+        63.0,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 17,
+      "number": 17,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1092.0,
+        589.21,
+        87.0,
+        56.97
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 18,
+      "number": 18,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        391.5,
+        608.7,
+        91.5,
+        62.97
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 19,
+      "number": 19,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        243.0,
+        631.19,
+        96.0,
+        58.47
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 20,
+      "number": 20,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1200.0,
+        646.18,
+        58.5,
+        89.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 21,
+      "number": 21,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1078.5,
+        647.68,
+        76.5,
+        89.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 22,
+      "number": 22,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        499.5,
+        649.18,
+        72.0,
+        95.95
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 23,
+      "number": 23,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        400.5,
+        679.17,
+        60.0,
+        91.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 24,
+      "number": 24,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        969.0,
+        680.67,
+        85.5,
+        71.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 25,
+      "number": 25,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        303.0,
+        688.16,
+        58.5,
+        89.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 26,
+      "number": 26,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1047.0,
+        731.64,
+        87.0,
+        82.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 27,
+      "number": 27,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1189.5,
+        742.14,
+        96.0,
+        73.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 28,
+      "number": 28,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        310.5,
+        746.64,
+        79.5,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 29,
+      "number": 29,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        442.5,
+        779.62,
+        91.5,
+        56.97
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 30,
+      "number": 1,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        319.5,
+        227.89,
+        76.5,
+        92.95
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 31,
+      "number": 2,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1095.0,
+        247.38,
+        90.0,
+        70.47
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 32,
+      "number": 3,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        387.0,
+        299.85,
+        81.0,
+        76.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 33,
+      "number": 4,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1051.5,
+        314.85,
+        72.0,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 34,
+      "number": 5,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1140.0,
+        320.84,
+        64.5,
+        94.45
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 35,
+      "number": 6,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        304.5,
+        337.34,
+        91.5,
+        64.47
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 36,
+      "number": 7,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        711.0,
+        617.7,
+        94.5,
+        74.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 37,
+      "number": 8,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        775.5,
+        674.67,
+        73.5,
+        94.45
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 38,
+      "number": 9,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        688.5,
+        715.15,
+        79.5,
+        83.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/A002.png",
+   "name": "A002.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1069.5,
+        220.39,
+        102.0,
+        107.95
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        298.5,
+        224.89,
+        103.5,
+        104.95
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        703.5,
+        436.29,
+        100.5,
+        101.95
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 4,
+      "number": 4,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        288.0,
+        581.72,
+        105.0,
+        103.45
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 5,
+      "number": 5,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1021.5,
+        638.69,
+        96.0,
+        101.95
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 6,
+      "number": 1,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        708.0,
+        181.41,
+        85.5,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 7,
+      "number": 2,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        465.0,
+        262.37,
+        87.0,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 8,
+      "number": 3,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        783.0,
+        271.37,
+        87.0,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 9,
+      "number": 4,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1146.0,
+        347.83,
+        87.0,
+        86.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 10,
+      "number": 5,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        601.5,
+        349.33,
+        87.0,
+        86.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 11,
+      "number": 6,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        894.0,
+        355.33,
+        87.0,
+        86.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 12,
+      "number": 7,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        400.5,
+        440.78,
+        87.0,
+        86.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 13,
+      "number": 8,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1128.0,
+        490.26,
+        87.0,
+        86.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 14,
+      "number": 9,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        877.5,
+        536.74,
+        87.0,
+        86.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 15,
+      "number": 10,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        538.5,
+        562.23,
+        87.0,
+        86.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 16,
+      "number": 11,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        805.5,
+        649.18,
+        85.5,
+        86.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 17,
+      "number": 12,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        661.5,
+        665.67,
+        85.5,
+        86.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 18,
+      "number": 13,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1174.5,
+        704.66,
+        87.0,
+        86.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 19,
+      "number": 14,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        403.5,
+        709.15,
+        87.0,
+        88.46
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/A003.png",
+   "name": "A003.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "red_white_capsule",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        702.0,
+        211.4,
+        102.0,
+        170.92
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "red_white_capsule",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        381.0,
+        245.88,
+        165.0,
+        119.94
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "red_white_capsule",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1026.0,
+        272.87,
+        174.0,
+        97.45
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 4,
+      "number": 4,
+      "label": "red_white_capsule",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        310.5,
+        469.27,
+        121.5,
+        160.42
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 5,
+      "number": 5,
+      "label": "red_white_capsule",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        877.5,
+        484.26,
+        177.0,
+        80.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 6,
+      "number": 6,
+      "label": "red_white_capsule",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1044.0,
+        635.69,
+        145.5,
+        143.93
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 7,
+      "number": 7,
+      "label": "red_white_capsule",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        544.5,
+        683.67,
+        166.5,
+        118.44
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 8,
+      "number": 1,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        642.0,
+        506.75,
+        78.0,
+        101.95
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/A004.png",
+   "name": "A004.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "flat_washer",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        883.99,
+        491.12,
+        123.46,
+        122.2
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 2,
+      "number": 2,
+      "label": "flat_washer",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        798.33,
+        581.82,
+        124.09,
+        122.83
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 3,
+      "number": 3,
+      "label": "flat_washer",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        943.2,
+        603.24,
+        124.72,
+        124.72
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 4,
+      "number": 1,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        568.42,
+        351.28,
+        116.53,
+        111.49
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 5,
+      "number": 2,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        665.42,
+        404.19,
+        116.53,
+        105.19
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 6,
+      "number": 3,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        467.64,
+        445.76,
+        119.05,
+        105.19
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 7,
+      "number": 4,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        571.57,
+        482.93,
+        116.53,
+        107.08
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 8,
+      "number": 5,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        687.47,
+        508.12,
+        116.53,
+        108.97
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 9,
+      "number": 6,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        484.01,
+        554.1,
+        119.05,
+        112.75
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 10,
+      "number": 7,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        583.54,
+        605.76,
+        119.05,
+        107.08
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 11,
+      "number": 8,
+      "label": "m6_nut",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        695.65,
+        622.76,
+        114.01,
+        114.64
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 12,
+      "number": 1,
+      "label": "red_white_capsule",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        821.0,
+        325.46,
+        112.75,
+        112.75
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 13,
+      "number": 2,
+      "label": "red_white_capsule",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        784.47,
+        387.81,
+        131.65,
+        109.6
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/A005.png",
+   "name": "A005.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "red_white_capsule",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        666.0,
+        548.73,
+        202.5,
+        127.44
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 2,
+      "number": 1,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        571.5,
+        281.86,
+        177.0,
+        169.42
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 3,
+      "number": 2,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        682.5,
+        368.82,
+        169.5,
+        167.92
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 4,
+      "number": 3,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        528.0,
+        413.8,
+        112.5,
+        193.41
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 5,
+      "number": 4,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        627.0,
+        496.26,
+        175.5,
+        107.95
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 6,
+      "number": 1,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        817.5,
+        353.83,
+        150.0,
+        152.93
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 7,
+      "number": 2,
+      "label": "white_round_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        864.0,
+        494.76,
+        150.0,
+        154.42
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/A006.png",
+   "name": "A006.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": true,
+   "annotation": {
+    "record": 1,
+    "by": "ai",
+    "model": "claude-opus-5-5",
+    "version": 1,
+    "objects": [
+     {
+      "id": 1,
+      "number": 1,
+      "label": "small_screw",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        393.0,
+        343.33,
+        136.5,
+        71.96
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 2,
+      "number": 1,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        646.5,
+        205.4,
+        132.0,
+        127.44
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 3,
+      "number": 2,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        475.5,
+        235.39,
+        145.5,
+        101.95
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 4,
+      "number": 3,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        981.0,
+        239.88,
+        138.0,
+        125.94
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 5,
+      "number": 4,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        829.5,
+        266.87,
+        135.0,
+        127.44
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 6,
+      "number": 5,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        721.5,
+        304.35,
+        142.5,
+        116.94
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 7,
+      "number": 6,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        967.5,
+        337.34,
+        100.5,
+        158.92
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 8,
+      "number": 7,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1092.0,
+        361.32,
+        154.5,
+        106.45
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 9,
+      "number": 8,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        597.0,
+        395.81,
+        157.5,
+        100.45
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 10,
+      "number": 9,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        837.0,
+        400.3,
+        118.5,
+        146.93
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 11,
+      "number": 10,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        493.5,
+        415.3,
+        106.5,
+        151.43
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 12,
+      "number": 11,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        304.5,
+        454.28,
+        156.0,
+        100.45
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 13,
+      "number": 12,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1075.5,
+        463.27,
+        148.5,
+        116.94
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 14,
+      "number": 13,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        652.5,
+        479.77,
+        156.0,
+        103.45
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 15,
+      "number": 14,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        963.0,
+        494.76,
+        130.5,
+        136.43
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 16,
+      "number": 15,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        430.5,
+        532.24,
+        132.0,
+        130.44
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 17,
+      "number": 16,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        780.0,
+        544.23,
+        156.0,
+        101.95
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 18,
+      "number": 17,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        573.0,
+        562.23,
+        102.0,
+        154.42
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 19,
+      "number": 18,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        1062.0,
+        578.72,
+        136.5,
+        128.94
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 20,
+      "number": 19,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        673.5,
+        583.22,
+        115.5,
+        146.93
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 21,
+      "number": 20,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        933.0,
+        598.21,
+        117.0,
+        146.93
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 22,
+      "number": 21,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        324.0,
+        635.69,
+        127.5,
+        136.43
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 23,
+      "number": 22,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        454.5,
+        665.67,
+        141.0,
+        119.94
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     },
+     {
+      "id": 24,
+      "number": 23,
+      "label": "yellow_oval_tablet",
+      "geometry": {
+       "type": "bbox",
+       "xywh": [
+        792.0,
+        680.67,
+        156.0,
+        100.45
+       ]
+      },
+      "attributes": {},
+      "parent": null
+     }
+    ]
+   }
+  },
+  {
+   "file": "images/A007.png",
+   "name": "A007.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/A008.png",
+   "name": "A008.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/B001.png",
+   "name": "B001.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  },
+  {
+   "file": "images/B002.png",
+   "name": "B002.png",
+   "width": 1536,
+   "height": 1024,
+   "used_for_training": false,
+   "annotation": null
+  }
+ ]
+}

@@ -1,18 +1,40 @@
-# LLM Agents for Image Annotation
+<p align="center">
+  <img src="agent_app/ui/public/icon.png" width="88" height="88" alt="">
+</p>
 
-**English** | [日本語](README.ja.md)
+<h1 align="center">LLM Agents for Image Annotation</h1>
 
-**Say what you want annotated and press a button or two. An LLM looks at your images, zooms in, and draws outlines or boxes, reading printed text when you ask.**
+<p align="center">
+  <strong>Say what you want annotated and press a button or two. An LLM looks at your images, zooms in, and draws outlines or boxes, reading printed text when you ask.</strong>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/microtaro/llm-agents-for-image-annotation?color=3730a3" alt="License: Apache-2.0"></a>
+  <a href="https://github.com/microtaro/llm-agents-for-image-annotation/releases/latest"><img src="https://img.shields.io/github/v/release/microtaro/llm-agents-for-image-annotation?label=release&color=3730a3" alt="Latest release"></a>
+  <img src="https://img.shields.io/badge/runs%20on-Claude%20Code%20%7C%20Codex%20CLI-3730a3" alt="Runs on Claude Code or Codex CLI">
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux-3730a3" alt="Windows and Linux">
+  <img src="https://img.shields.io/badge/UI-English%20%7C%20%E6%97%A5%E6%9C%AC%E8%AA%9E-3730a3" alt="English and Japanese">
+</p>
+
+<p align="center">
+  <a href="#install-and-run">Install</a> ·
+  <a href="#the-whole-flow">Demo</a> ·
+  <a href="#what-it-does">What it does</a> ·
+  <a href="#sample-data">Sample data</a> ·
+  <a href="README.ja.md">日本語</a>
+</p>
+
+<div align="center">
 
 | Outlines (segmentation) | Boxes | Boxes inside boxes, with the text read |
 |:---|:---|:---|
 | <img src="docs/images/hero-outlines.jpg" alt="Animals outlined and labeled by species." width="240"> | <img src="docs/images/hero-boxes.jpg" alt="Small parts on a tray, each boxed and labeled by type." width="240"> | <img src="docs/images/hero-text.jpg" alt="Two medicine boxes. Inside each, the barcode, the product name and the lot line are boxed and read." width="240"> |
 
+</div>
+
 These are results of the sample datasets in [`samples/`](samples). The text read from the medicine boxes is shown under [What it does](#what-it-does).
 
 The AI runs through your own Claude Code or Codex CLI, so annotation uses what that CLI is signed in with, usually your subscription's limits. Entering an API key in the app is not supported yet.
-
-**[Install and run](#install-and-run)** on Windows or Linux, from this repository.
 
 The app is in **English and Japanese**, both the screen and the agents. This page shows the English screen; [the Japanese page](README.ja.md) shows the Japanese one.
 

@@ -1,18 +1,40 @@
-# LLM Agents for Image Annotation
+<p align="center">
+  <img src="agent_app/ui/public/icon.png" width="88" height="88" alt="">
+</p>
 
-[English](README.md) | **日本語**
+<h1 align="center">LLM Agents for Image Annotation</h1>
 
-**やりたいことを1文で伝えて、ボタンを1〜2回押すだけ。LLM が画像を見て、拡大して、輪郭や枠を描き、頼めば印字も読み取ります。**
+<p align="center">
+  <strong>やりたいことを1文で伝えて、ボタンを1〜2回押すだけ。LLM が画像を見て、拡大して、輪郭や枠を描き、頼めば印字も読み取ります。</strong>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/microtaro/llm-agents-for-image-annotation?color=3730a3" alt="ライセンス: Apache-2.0"></a>
+  <a href="https://github.com/microtaro/llm-agents-for-image-annotation/releases/latest"><img src="https://img.shields.io/github/v/release/microtaro/llm-agents-for-image-annotation?label=release&color=3730a3" alt="最新の版"></a>
+  <img src="https://img.shields.io/badge/runs%20on-Claude%20Code%20%7C%20Codex%20CLI-3730a3" alt="Claude Code か Codex CLI で動く">
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux-3730a3" alt="Windows と Linux">
+  <img src="https://img.shields.io/badge/UI-English%20%7C%20%E6%97%A5%E6%9C%AC%E8%AA%9E-3730a3" alt="英語と日本語">
+</p>
+
+<p align="center">
+  <a href="#インストールと起動">インストール</a> ·
+  <a href="#通しの流れ">動画</a> ·
+  <a href="#できること">できること</a> ·
+  <a href="#サンプルデータ">サンプルデータ</a> ·
+  <a href="README.md">English</a>
+</p>
+
+<div align="center">
 
 | 輪郭（セグメンテーション） | 枠 | 枠の中の枠と、読み取った文字 |
 |:---|:---|:---|
 | <img src="docs/images/hero-outlines.jpg" alt="動物を1頭ずつ輪郭で囲み、種類のラベルを付けた結果。" width="240"> | <img src="docs/images/hero-boxes.jpg" alt="トレイの小物を1つずつ枠で囲み、種類のラベルを付けた結果。" width="240"> | <img src="docs/images/hero-text.jpg" alt="薬の箱が2つ。箱の中で、バーコードと商品名と LOT の行を枠で囲み、読み取っている。" width="240"> |
 
+</div>
+
 [`samples/`](samples) にあるサンプルのデータセットの結果です。薬の箱から読み取った文字は、[できること](#できること)で見られます。
 
 AI はあなたの PC の Claude Code か Codex の CLI で動きます。アノテーションには、その CLI のログインの枠（ふつうはサブスクリプションの利用枠）を使います。アプリに API キーを入れて使う形には、まだ対応していません。
-
-**[インストールと起動](#インストールと起動)**: Windows と Linux で、このリポジトリから動かせます。
 
 アプリは**日本語と英語**に対応しています（画面もエージェントも）。このページは日本語の画面です。[英語のページ](README.md)には英語の画面があります。
 

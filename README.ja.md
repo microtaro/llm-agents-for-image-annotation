@@ -235,6 +235,10 @@ npm run dev:ui    # アプリを起動した状態で、ホットリロードの
 
 まだ試験版で、一番ほしいのはフィードバックです。[Issue](https://github.com/microtaro/llm-agents-for-image-annotation/issues/new/choose)を開いてください。
 
+## 免責事項
+
+このソフトウェアは「現状のまま」提供し、どのような保証もしません（[Apache-2.0](LICENSE) の第7条・第8条）。使ったことで生じた損害（アノテーションの誤り、データの消失、Claude や Codex の利用枠や費用を含む）について、作者は責任を負いません。ご自身の責任で使い、結果は確かめてから使い、大事なデータは控えを取ってください。
+
 ## ライセンス
 
 開発: Jun Sato。ライセンスは [Apache-2.0](LICENSE) です。使っているライブラリには、それぞれのライセンスが適用されます。画面に組み込んだものは、`agent_app/ui/dist/third-party-licenses.md` で確かめられます。独立したプロジェクトで、Anthropic や OpenAI との提携や推奨はありません。

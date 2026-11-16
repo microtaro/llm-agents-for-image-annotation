@@ -235,6 +235,10 @@ The app is in `agent_app/`: the server in `agent_app/agent_app/`, the screen in 
 
 This is an early test version, and feedback is what we want most. Please [open an issue](https://github.com/microtaro/llm-agents-for-image-annotation/issues/new/choose).
 
+## Disclaimer
+
+This software is provided "as is", without warranty of any kind (sections 7 and 8 of the [Apache-2.0 license](LICENSE)). The author is not liable for any loss or damage from using it, including wrong annotations, lost data, and the usage or costs of your Claude or Codex plan. Use it at your own risk: check the results before you rely on them, and keep copies of data that matters.
+
 ## License
 
 Developed by Jun Sato. Licensed under [Apache-2.0](LICENSE). The libraries it uses keep their own licenses. Those built into the screen are listed in `agent_app/ui/dist/third-party-licenses.md`. This is an independent project, not affiliated with or endorsed by Anthropic or OpenAI.

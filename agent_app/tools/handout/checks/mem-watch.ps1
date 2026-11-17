@@ -1,7 +1,7 @@
 # Every 2 s until the stop file appears: free memory, the commit room, and the memory (working
 # set, private) of the app's server, every program it started (the workers' CLIs and their
 # Python), and the app's window (Chrome or Edge), into a CSV.
-# Folder: the app's folder (where Annotation.exe is).
+# Folder: the clone's folder (where Annotation.lnk is).
 param([string]$Folder, [string]$Out, [string]$StopFile)
 $here = [regex]::Escape($Folder)
 "time,free_mb,commit_room_mb,server_ws,server_priv,children,children_ws,children_priv,largest_child_ws,child_names,window_ws,window_priv" | Out-File $Out -Encoding utf8

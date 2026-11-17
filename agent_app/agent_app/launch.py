@@ -1,8 +1,8 @@
-"""Start the app and keep a small window while it runs: what the zip's start runs
-(Annotation.exe on Windows, start.sh elsewhere; user 2026-10-29: a shortcut through the classic
-console was refused on another machine, and a Windows Terminal set never to close kept start's
-tab; then "users always get it wrong": an app running with nothing in view held its folder
-against deleting it). The server starts apart (its log in config.LOG) unless this folder's runs
+"""Start the app and keep a small window while it runs: what the given app's start runs
+(start.cmd and the shortcut on Windows, start.sh elsewhere; user 2026-10-29: a shortcut
+through the classic console was refused on another machine, and a Windows Terminal set never
+to close kept start's tab; then "users always get it wrong": an app running with nothing in
+view held its folder against deleting it). The server starts apart (its log in config.LOG) unless this folder's runs
 already; it finds its port itself (config.given_socket), so another folder's app or another
 program on a port is not this launcher's concern.
 
@@ -337,8 +337,7 @@ def shortcut_target(executable, app):
     """What the shortcut opens, when this start is from a clone on Windows (its start.cmd, the
     shortcut itself or npm start, all by the app's .venv): that .venv's pythonw.exe, which opens
     no terminal (user 2026-11-11: the public repository has no zip, and people on Windows start
-    by double-click). None otherwise: the zip's (python-windows, by Annotation.exe) and other
-    systems."""
+    by double-click). None otherwise: another Python, and other systems."""
     executable = Path(executable)
     beside_venv = os.path.normcase(executable.parent) == os.path.normcase(
         app / ".venv" / "Scripts"

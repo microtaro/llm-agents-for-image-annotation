@@ -209,7 +209,7 @@ def create_app(db_path=None):
     async def quit_app(request: Request):
         """The app ends from its screen (user 2026-10-29: the zip's runs with no window to
         close; the same screen everywhere, the work's own too); the answer goes out before it
-        ends. A server not started by __main__ (a test's, the zip build's) has no quit."""
+        ends. A server not started by __main__ (a test's) has no quit."""
         if not hasattr(request.app.state, "quit"):
             raise errors.ApiError(
                 409, "quit_not_here", "This server is not quit from its screen"

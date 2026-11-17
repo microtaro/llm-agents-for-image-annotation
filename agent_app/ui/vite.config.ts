@@ -94,7 +94,8 @@ export default defineConfig(({ command }) => {
       },
     ],
     resolve: { alias: { "@": path.resolve(import.meta.dirname, "./src") } },
-    // The libraries' licences, for the screen built into the zip (their notices are minified away).
+    // The libraries' licences, for the built screen the public repository carries (their notices
+    // are minified away).
     build: { license: { fileName: LICENCES } },
     server: dev
       ? {

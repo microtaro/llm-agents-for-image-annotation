@@ -13,11 +13,11 @@ from .config import LOG, given, given_socket, server_port
 
 def serve():
     if given():
-        # No window shows it (the zip's start runs it hidden): what it says goes to its file,
+        # No window shows it (its start runs it hidden): what it says goes to its file,
         # open as long as the server is.
         sys.stdout = sys.stderr = open(LOG, "a", encoding="utf-8", buffering=1)  # noqa: SIM115
     # A crash outside Python (an image library's C code, a Windows exception) writes where it
-    # was, to the log in the zip's app (2026-11-02: an app went away and its log said nothing).
+    # was, to the given app's log (2026-11-02: an app went away and its log said nothing).
     faulthandler.enable()
     logging.basicConfig(level=logging.INFO)
     try:

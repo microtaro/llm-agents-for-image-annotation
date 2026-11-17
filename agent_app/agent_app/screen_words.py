@@ -10,7 +10,7 @@ from functools import cache
 
 from .config import APP
 
-# The screen's dictionary (ui/src/i18n), in the zip too (tools/handout/build.py).
+# The screen's dictionary (ui/src/i18n).
 DICTIONARY = APP / "ui/src/i18n"
 
 # (the screen's word, in English, what it is, the words never used for it)

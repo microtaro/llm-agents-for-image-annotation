@@ -1,17 +1,17 @@
-# How the app ends, and what the person is told: opens the app (Annotation.exe in the zip, or the
-# shortcut Annotation.lnk npm start makes in a clone), ends it one way, and reads the launcher's
-# message box, if one comes.
+# How the app ends, and what the person is told: opens the app (the shortcut Annotation.lnk a
+# clone's first start makes, or start.cmd), ends it one way, and reads the launcher's message
+# box, if one comes.
 #   server: the server is killed           -> "アプリが途中で止まりました" and the log
 #   window: the app's window is killed     -> "アプリの窓が途中で閉じたので…"
 #   quit:   quit as the screen's power does -> nothing; everything gone
 #   close:  the window's close button       -> nothing; everything gone
-# Folder: the app's folder (where Annotation.exe or Annotation.lnk is). Start: what to open there.
+# Folder: the clone's folder (where Annotation.lnk is). Start: what to open there.
 # Nothing else of the app may be running. "windows:" names what shows a window besides the app's
 # own (2026-11-11: a start by double-click opens no terminal).
 param(
   [string]$Folder,
   [ValidateSet('server', 'window', 'quit', 'close')][string]$Case,
-  [string]$Start = 'Annotation.exe'
+  [string]$Start = 'Annotation.lnk'
 )
 [Console]::OutputEncoding = [Text.Encoding]::UTF8
 Add-Type -AssemblyName UIAutomationClient, UIAutomationTypes

@@ -280,10 +280,10 @@ def test_the_app_going_away_on_its_own_is_said(tmp_path, monkeypatch):
 
 def test_shortcut_only_from_a_clone(tmp_path):
     """The shortcut is made at a start from a clone (the .venv's python.exe or pythonw.exe) and
-    opens its pythonw.exe; not from the zip's Python (2026-11-11)."""
+    opens its pythonw.exe; not from another Python (2026-11-11)."""
     app = tmp_path / "agent_app"
     scripts = app / ".venv" / "Scripts"
     for started in ("python.exe", "pythonw.exe"):
         assert launch.shortcut_target(scripts / started, app) == scripts / "pythonw.exe"
-    zipped = tmp_path / "python-windows" / "pythonw.exe"
-    assert launch.shortcut_target(zipped, app) is None
+    another = tmp_path / "Python314" / "pythonw.exe"
+    assert launch.shortcut_target(another, app) is None

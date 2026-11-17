@@ -16,15 +16,14 @@ PACKAGE = Path(__file__).resolve().parent
 APP = PACKAGE.parent
 REPO = APP.parent
 UI_DIST = APP / "ui" / "dist"
-# Read from the file, not an installed package's facts: the zip's Windows Python runs the app
-# from its folder, installed nowhere (2026-10-30).
+# Read from the file, the one place it is written.
 VERSION = tomllib.loads((APP / "pyproject.toml").read_text(encoding="utf-8"))[
     "project"
 ]["version"]
 
 
-# The port the app given to someone as a zip tries first, on every start (user 2026-10-28): apart
-# from this project's own (3110, the copy's 4110), so trying a zip on this machine meets neither.
+# The port the given app tries first, on every start (user 2026-10-28): apart from this
+# project's own (3110, the copy's 4110), so trying a clone on this machine meets neither.
 # When something else has it, the next free one (user 2026-11-04).
 PORT_GIVEN = 3900
 PORTS_TRIED = 100
@@ -33,9 +32,9 @@ PORT_FILE = APP / "server.port"
 
 
 def given():
-    """The app given to someone, as a zip (user 2026-10-28) or a clone of its public repository:
-    it has no project file. It listens on a port it finds free (given_socket), runs with no
-    window (its log in LOG) and is quit from its screen."""
+    """The app given to someone, a clone of its public repository (user 2026-11-17: the one way
+    it is given): it has no project file. It listens on a port it finds free (given_socket),
+    runs with no window (its log in LOG) and is quit from its screen."""
     return not (REPO / ".claude/project.config.json").is_file()
 
 

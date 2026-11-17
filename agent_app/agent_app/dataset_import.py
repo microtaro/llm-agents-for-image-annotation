@@ -511,11 +511,10 @@ SAMPLES = REPO / "samples"
 
 
 def take_in_samples(db):
-    """A clone of the public repository starts with its sample datasets, as the zip does (user
-    2026-11-11: it should start with the samples taken in): taken in when the app's own database
-    was made by this start and the samples are beside it. Not again later, so datasets a person
-    deleted stay deleted; not from a zip (its database comes made) nor in tests (a database of
-    their own)."""
+    """A clone of the public repository starts with its sample datasets (user 2026-11-11: it
+    should start with the samples taken in): taken in when the app's own database was made by
+    this start and the samples are beside it. Not again later, so datasets a person deleted stay
+    deleted; not in tests (a database of their own)."""
     if not (db.created and db.path == APP / "agent.db" and SAMPLES.is_dir()):
         return
     try:

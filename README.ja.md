@@ -22,6 +22,7 @@
   <a href="#通しの流れ">動画</a> ·
   <a href="#できること">できること</a> ·
   <a href="#サンプルデータ">サンプルデータ</a> ·
+  <a href="docs/models.ja.md">モデルの選び方</a> ·
   <a href="CHANGELOG.ja.md">更新履歴</a> ·
   <a href="README.md">English</a>
 </p>
@@ -182,6 +183,8 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 **Codex:** [インストールの案内](https://developers.openai.com/codex/cli)に沿って入れ、`codex` を1回実行してログインします。アプリの初期設定は Claude Opus 5.5 なので、画面の右上の設定で GPT のモデルを選んでください。
 
+**どのモデルを使うか:** 輪郭を細かく描くなら、試しでは GPT-6.2 Sol（Codex）がいちばん良く、費用も安く済みました。GPT-6.2 Astra も細かく描きます。Claude Opus 5.5 は速いですが、計画書で物ごとの拡大を頼まないと、輪郭が粗くなります。詳しくは[モデルの選び方](docs/models.ja.md)。
+
 ### 2. アプリを入手して起動する
 
 [Git](https://git-scm.com/) が必要です。アプリを入手します。
@@ -205,7 +208,7 @@ git clone https://github.com/microtaro/llm-agents-for-image-annotation.git
 ### 知っておくとよいこと
 
 - **言語:** 画面はブラウザの言語で開きます。日本語と英語は、画面の右上の設定で切り替えられます。エージェントは、あなたが書いた言語で答えます。
-- **モデル:** Claude は Opus 5.5・Sonnet 5.5・Haiku 5.5 です（Haiku はエージェントには選べません）。GPT は、お使いの Codex CLI が出している、画像を読めるモデルです。新しいモデルは、アプリを更新しなくても出てきます。アプリが値段を知らないモデルも動きますが、費用は不明と出て、依頼の費用の上限では止まりません。値段を足した時は[更新履歴](CHANGELOG.ja.md)に書きます。
+- **モデル:** Claude は Opus 5.5・Sonnet 5.5・Haiku 5.5 です（Haiku はエージェントには選べません）。GPT は、お使いの Codex CLI が出している、画像を読めるモデルです。新しいモデルは、アプリを更新しなくても出てきます。アプリが値段を知らないモデルも動きますが、費用は不明と出て、依頼の費用の上限では止まりません。値段を足した時は[更新履歴](CHANGELOG.ja.md)に書きます。どのモデルを選ぶかは[モデルの選び方](docs/models.ja.md)にあります。
 - **ポート:** 3900 で、埋まっている時は次の空き番号になります。番号は `agent_app/server.port` に書かれます。
 - **ログ:** `agent_app/server.log` です。問題を報告する時は、最後の部分を付けてください。
 - **新しい版:** [更新履歴](CHANGELOG.ja.md)を見てください。フォルダで `git pull` を実行し、ショートカットではなく `start.cmd` か `sh start.sh` で起動します。新しい版に要る物は、ここで入ります。データセットや結果は、そのまま残ります。データの持ち方が変わる版では、更新履歴に書きます。

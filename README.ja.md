@@ -12,6 +12,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/github/license/microtaro/llm-agents-for-image-annotation?color=3730a3" alt="ライセンス: Apache-2.0"></a>
   <a href="https://github.com/microtaro/llm-agents-for-image-annotation/releases/latest"><img src="https://img.shields.io/github/v/release/microtaro/llm-agents-for-image-annotation?label=release&color=3730a3" alt="最新の版"></a>
   <img src="https://img.shields.io/badge/runs%20on-Claude%20Code%20%7C%20Codex%20CLI-3730a3" alt="Claude Code か Codex CLI で動く">
+  <img src="https://img.shields.io/badge/plan-Claude%20or%20ChatGPT%20subscription-3730a3" alt="Claude か ChatGPT のサブスクリプションで動く">
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux-3730a3" alt="Windows と Linux">
   <img src="https://img.shields.io/badge/UI-English%20%7C%20%E6%97%A5%E6%9C%AC%E8%AA%9E-3730a3" alt="英語と日本語">
 </p>
@@ -204,6 +205,7 @@ git clone https://github.com/microtaro/llm-agents-for-image-annotation.git
 ### 知っておくとよいこと
 
 - **言語:** 画面はブラウザの言語で開きます。日本語と英語は、画面の右上の設定で切り替えられます。エージェントは、あなたが書いた言語で答えます。
+- **モデル:** Claude は Opus 5.5・Sonnet 5.5・Haiku 5.5 です（Haiku はエージェントには選べません）。GPT は、お使いの Codex CLI が出している、画像を読めるモデルです。新しいモデルは、アプリを更新しなくても出てきます。アプリが値段を知らないモデルも動きますが、費用は不明と出て、依頼の費用の上限では止まりません。値段を足した時は[更新履歴](CHANGELOG.ja.md)に書きます。
 - **ポート:** 3900 で、埋まっている時は次の空き番号になります。番号は `agent_app/server.port` に書かれます。
 - **ログ:** `agent_app/server.log` です。問題を報告する時は、最後の部分を付けてください。
 - **新しい版:** [更新履歴](CHANGELOG.ja.md)を見てください。フォルダで `git pull` を実行し、ショートカットではなく `start.cmd` か `sh start.sh` で起動します。新しい版に要る物は、ここで入ります。データセットや結果は、そのまま残ります。データの持ち方が変わる版では、更新履歴に書きます。

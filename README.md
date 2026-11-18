@@ -21,6 +21,7 @@
   <a href="#the-whole-flow">Demo</a> ·
   <a href="#what-it-does">What it does</a> ·
   <a href="#sample-data">Sample data</a> ·
+  <a href="CHANGELOG.md">Changelog</a> ·
   <a href="README.ja.md">日本語</a>
 </p>
 
@@ -205,7 +206,7 @@ Open a sample dataset and tell the agent what you want: ask it to annotate the r
 - **Language:** the screen opens in your browser's language. Switch between English and Japanese in the settings at the top right. The agents answer in the language you write in.
 - **Port:** 3900, or the next free one. The number is in `agent_app/server.port`.
 - **Log:** `agent_app/server.log`. Please include the end of it when you report a problem.
-- **New versions:** earlier data is not carried over. To keep a dataset, use **Write out** in the library first. Then run `git pull`, delete `agent_app/agent.db` and `agent_app/agent-files/`, and start again with `start.cmd` or `sh start.sh`. The library starts again with the sample datasets.
+- **New versions:** see the [changelog](CHANGELOG.md). Run `git pull` in the folder, then start with `start.cmd` or `sh start.sh`, not the shortcut: they install what the new version needs. Your datasets and results stay. If a version changes how they are kept, the changelog says so.
 - **Moved the folder:** delete `agent_app/.venv`, then start with `start.cmd` or `sh start.sh` once. On Windows, this makes the shortcut again.
 - **To remove the app,** quit it and delete the folder.
 

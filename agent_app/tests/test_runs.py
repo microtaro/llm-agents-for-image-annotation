@@ -10,6 +10,7 @@ import os
 from uuid import uuid4
 
 import httpx
+import pytest
 from agent_app.actors import PERSON
 from agent_app.app import create_app
 from agent_app.codex_execution import inference_prompt
@@ -901,9 +902,14 @@ def test_haiku_5_5_is_offered_and_priced_with_its_short_prompt_prices():
     assert any("100000 tokens or less" in a for a in cost["assumptions"])
 
 
-def test_gpt_6_1_terra_is_priced_so_its_cost_and_limit_hold():
+@pytest.mark.parametrize(
+    ("model", "usd"),
+    [("gpt-6.1-terra", 6.0), ("gpt-6.2-astra", 48.0), ("gpt-6.2-sol", 12.0)],
+)
+def test_a_new_gpt_is_priced_so_its_cost_and_limit_hold(model, usd):
     # User 2026-10-27: GPT-6.1 Terra is out, make it usable. The CLI's catalog offered it, but
-    # without a price its cost was unknown and a run's cost limit never stopped it.
+    # without a price its cost was unknown and a run's cost limit never stopped it. The same
+    # with GPT-6.2 Astra and Sol (2026-11-18).
     from agent_app.costs import api_cost
     from agent_app.model_catalog import API_PRICE_VERSION
 
@@ -914,12 +920,12 @@ def test_gpt_6_1_terra_is_priced_so_its_cost_and_limit_hold():
             "cached_input_tokens": 0,
         },
         {
-            "model": "gpt-6.1-terra",
+            "model": model,
             "api_price_version": API_PRICE_VERSION,
             "usd_to_jpy": "160",
         },
     )
-    assert (cost["missing_reason"], float(cost["usd"])) == (None, 6.0)
+    assert (cost["missing_reason"], float(cost["usd"])) == (None, usd)
 
 
 def test_an_image_not_searched_is_a_failure_with_its_reason(tmp_path, monkeypatch):

@@ -107,7 +107,7 @@ def codex_models():
 
 
 # OpenAI Standard prices per version (checked on its date). Keep old versions for replay.
-API_PRICE_VERSION = "openai-api-2026-10-27"
+API_PRICE_VERSION = "openai-api-2026-11-18"
 # Runs recorded before prices had versions are priced with this one.
 LEGACY_API_PRICE_VERSION = "openai-api-2026-09-23"
 API_PRICE_URL = "https://developers.openai.com/api/docs/pricing"
@@ -121,14 +121,20 @@ _OPENAI_2026_09_23 = {
     "gpt-5.6-luna": ("0.20", "0.02", "0.25", "1.20"),
 }
 _OPENAI_2026_09_30 = {**_OPENAI_2026_09_23, "gpt-6.1-sol": ("2", "0.10", "2.50", "10")}
+# GPT-6.1 Terra added (user 2026-10-27: it came out); the page's other GPT-6 prices were
+# unchanged that day.
+_OPENAI_2026_10_27 = {**_OPENAI_2026_09_30, "gpt-6.1-terra": ("1", "0.05", "1.25", "5")}
 API_RATES = {
     LEGACY_API_PRICE_VERSION: _OPENAI_2026_09_23,
     "openai-api-2026-09-30": _OPENAI_2026_09_30,
-    # GPT-6.1 Terra added (user 2026-10-27: it came out); the page's other GPT-6 prices were
-    # unchanged that day.
+    "openai-api-2026-10-27": _OPENAI_2026_10_27,
+    # GPT-6.2 Astra and Sol added (user 2026-11-18: Codex's catalog offered them, unpriced).
+    # The page's Standard rows for the models above were unchanged that day; it has no
+    # long-context Standard price for GPT-6.2.
     API_PRICE_VERSION: {
-        **_OPENAI_2026_09_30,
-        "gpt-6.1-terra": ("1", "0.05", "1.25", "5"),
+        **_OPENAI_2026_10_27,
+        "gpt-6.2-astra": ("8", "0.40", "10", "40"),
+        "gpt-6.2-sol": ("2", "0.10", "2.50", "10"),
     },
 }
 

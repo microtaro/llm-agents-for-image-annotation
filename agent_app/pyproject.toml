@@ -1,6 +1,6 @@
 [project]
 name = "agent-app"
-version = "0.7.5.9"
+version = "0.7.6.0"
 description = "LLM Agents for Image Annotation: LLM agents annotate your images, and you approve each run"
 license = "Apache-2.0"
 requires-python = ">=3.12"

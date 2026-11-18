@@ -4,6 +4,13 @@ The main changes in each version. A version is a tag and a [release](https://git
 
 [日本語](CHANGELOG.ja.md)
 
+## Unreleased
+
+### Added
+
+- [Choosing a model](docs/models.md): which model to pick for outlines, from a test on 2026-11-18, with a tip for Claude Opus 5.5 (ask it in the plan to zoom in on each object). The README links it from its top row and from step 1 of installing.
+- The README's Good to know lists the models you can choose, and what happens with a model the app has no price for.
+
 ## 0.7.6.0 - 2026-11-18
 
 ### Added

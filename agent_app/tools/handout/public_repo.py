@@ -87,6 +87,16 @@ def main():
         "files changed in",
         FOLDER,
     )
+    # Changes not in a version yet go under the next version's heading when it is released
+    # (user 2026-11-18): said here, as this runs before every release.
+    for name in ("CHANGELOG.md", "CHANGELOG.ja.md"):
+        path = FOLDER / name
+        text = path.read_text(encoding="utf-8") if path.is_file() else ""
+        if "\n## Unreleased" in text or "\n## 未リリース" in text:
+            print(
+                f"{name} に未リリースの節があります。版を出す時は、"
+                "見出しを版の番号と日付に替えてください。"
+            )
 
 
 if __name__ == "__main__":

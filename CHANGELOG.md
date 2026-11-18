@@ -6,6 +6,8 @@ The main changes in each version. A version is a tag and a [release](https://git
 
 ## Unreleased
 
+<!-- When releasing, rename this heading to "<version> - <date>". -->
+
 ### Added
 
 - [Choosing a model](docs/models.md): which model to pick for outlines, from a test on 2026-11-18, with a tip for Claude Opus 5.5 (ask it in the plan to zoom in on each object). The README links it from its top row and from step 1 of installing.

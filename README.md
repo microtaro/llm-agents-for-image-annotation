@@ -159,7 +159,13 @@ Your own CLI ── MCP ──▶ /mcp (the same server)
 - Each image gets a fresh AI with only the plan and that image.
 - The server keeps the queue and how many run at once.
 - The AI measures on the image it sees, and the server converts that to original pixels.
-- The app's agents have no shell. The server checks every tool call and turns data changes into decisions.
+- The app's agents have no shell, and the server checks every tool call.
+
+**The idea: agents and an ontology.** Everything on the right is an object of a fixed type with states: datasets, images, plan versions and drafts, runs, results, decisions, training snapshots and labels. We call this set of types the app's ontology.
+
+- **What to do next:** the server works out from the states what is still open and what comes next. The agent does not have to keep track.
+- **Screens:** the agent never builds one. It names a type and conditions, and the app shows those objects the way it shows that type.
+- **Changes:** the agent may write the plan's draft and notes. Anything you rely on, such as a run, a new plan version, a renamed label or a deleted dataset, is a decision that a person approves and the server carries out.
 
 ## Install and run
 
@@ -239,7 +245,7 @@ Five small datasets. All the images are synthetic. They are in [`samples/`](samp
 
 In this app, LLM agents carry the work from a conversation through the plan to annotation, and the LLM draws the shapes itself by looking at your images.
 
-- **It goes from talk to plan to annotation, and you decide little.** Say what you want, and the agent looks through all the images 16 at a time and writes the plan, asking with options where it is unsure. It tries the plan on samples, checks the results, chooses references and runs the rest. The app keeps datasets, plans, results and decisions as types with states (an ontology), so what to decide next is known. The agent brings it to you as a decision with a recommended option, and most of the time you press the recommendation or approve.
+- **It goes from talk to plan to annotation, and you decide little.** Say what you want, and the agent looks through all the images 16 at a time and writes the plan, asking with options where it is unsure. It tries the plan on samples, checks the results, chooses references and runs the rest. The app keeps datasets, plans, results and decisions as typed objects with states, and works out from them what is still open. When the agent asks or proposes a run, it gives options with a recommendation, and the right pane shows what that decision is about, such as the samples' results, so most of the time you look and approve.
 - **The AI looks for itself, with tools.** It asks for zoomed crops and for its own outlines drawn over the image, checks them and fixes them. It decides how closely to look (19 times for the image above).
 - **Ask the dataset's records, and make new data from them.** The agent answers by reading the app's database with conditions. Ask "Which images have values it couldn't read?" or "Which results did a person fix?", and the matching ones appear on the right. You can also ask in the chat to start from another dataset's plan, to carry results from an earlier version or another dataset over to the new plan, or to combine several datasets into a new one.
 - **The AI draws, and you can fix it by hand.** Drag the points of an outline to fix its shape, add or delete objects, and correct labels and values. Then choose what training uses and export it as COCO JSON.
